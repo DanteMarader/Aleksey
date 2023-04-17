@@ -1,0 +1,87 @@
+
+.Head{
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+
+}
+.HeadText{
+    background-color: brown;
+    color: white;
+    margin: 5px;
+    padding:0px 10px;
+    display: flex;
+}
+
+.stroka1 {
+    display: flex;
+    width: 75%;
+}
+
+.stroka1 :last-child{
+    padding-left: 5px;
+    font-style: italic;
+}
+
+.stroka2{
+    display: flex;
+    width: 25%;
+    
+}
+
+.stroka2 p {
+    padding: 5px;
+}
+.Mid {
+    display: flex;
+    margin: 5px;
+    background-color: rgb(35, 126, 126);
+}
+.Mid1 img {
+    margin: 10px;
+}
+.Mid3 {
+    margin: auto;
+}
+.Mid3 p{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+.Down {
+    display: flex;
+    margin: 5px; 
+}
+
+.Down button{
+    color: white;
+    background-color:brown;
+}
+.d1 {
+    width: 25%;
+}
+.d1 img {
+    width: 280px;height: 200px;
+    padding-bottom: 10px;
+}
+.d2 {
+    width: 25%;
+}
+.d2 img {
+    padding-bottom: 10px;
+    width: 280px;height: 200px;
+}
+.d3 {
+    width: 25%;
+}
+.d3 img {
+    padding-bottom: 10px;
+    width: 280px;height: 200px;
+}
+.d4 {
+    width: 25%;
+}
+.d4 img {
+    padding-bottom: 10px;
+    width: 280px;height: 200px;
+}

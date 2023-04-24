@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        let swap = prompt("Введите 1 если хотите конвертировать в USD\nВведите 2 если хотите конвертировать в EUR\nВведите 3 если хотите конвертировать в GBR")
+        let tenge = prompt("Введите количество средств")
+        if(swap==1){
+            alert(tenge + " KZT = " + (tenge/380).toFixed(2) + " USD")
+        }
+        else if(swap==2){
+            alert(tenge + " KZT = " + (tenge/430).toFixed(2) + " EUR")
+        }
+        else if(swap==3){
+            alert(tenge + " KZT = " + (tenge/480).toFixed(2) + " GBR")
+        }
+
+    </script>
+</body>
+
+</html>

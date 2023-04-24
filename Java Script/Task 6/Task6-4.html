@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        const x = Number(prompt("Введите количество цифр"))
+        const array = [];
+        for (let i = 0; i < x; i++) {
+            const element = Number(prompt("Введите элемент " + (i + 1)));
+            array.push(element);
+        }
+        let square = "Квадраты введеных чисел:\n"
+        for (let i = 0; i < x; i++) {
+            const multi = array[i] * array[i]
+            square += multi +"\n"
+        }
+        console.log(square)
+        alert(square)
+    </script>
+</body>
+
+</html>

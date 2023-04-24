@@ -1,0 +1,21 @@
+<body>
+    <script>
+
+        const x = Number(prompt("Введите количество цифр"))
+        const array = [];
+        for (let i = 0; i < x; i++) {
+            const element = Number(prompt("Введите элемент " + (i + 1)));
+            array.push(element);
+        }
+        let sum = 0
+        for (let i = 0; i < x; i++) {
+            sum += array[i]
+        }
+        let average = sum / x
+
+        console.log("Сумма чилел " + sum + " Среднее арефмитическое " + average)
+        alert("Сумма чилел " + sum + " Среднее арефмитическое " + average)
+    </script>
+</body>
+
+</html>

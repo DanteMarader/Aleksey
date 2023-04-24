@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script>
+            const usd = 380
+            let tenge = prompt("Введите количество средств")
+            if(tenge%usd != 0){
+                alert((tenge/usd).toFixed(0) + " USD and " + tenge%usd + " cents" )
+            }else {
+                alert("ONLY " + tenge/usd + " USD")
+            }
+        </script>
+    </body>
+</html>

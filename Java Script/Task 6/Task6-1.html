@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        const x = prompt("Введите количество цифр")
+        const array = [];
+        for (let i = 0; i < x; i++) {
+            const element = prompt("Введите элемент " + (i + 1));
+            array.push(element);
+        }
+        let result = "";
+
+        for (let i = array.length - 1; i >= 0; i--) {
+            console.log(array[i]);
+            result += array[i] + " "
+        }
+        alert("Цифры в обратном порядке ввода " + result)
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+.Main {
+    width: 95%;
+    background-color: lightgrey;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.Head {
+    display: flex;
+    margin: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: rgb(67, 67, 225);
+}
+
+.textHead {
+    width: 25%;
+    color: white;
+    text-align: center;
+}
+
+.inputHead {
+    width: 80%;
+    margin-top: 15px;
+}
+
+.input {
+    background-color: rgb(25, 25, 140);
+}
+
+.MainCore {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainleft {
+    width: 13%;
+    margin-left: 10%;
+}
+
+.mainleft p {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mainmid {
+    width: 20%;
+}
+
+.foto {
+    width: 100%;
+    padding: 6px;
+    background-color: white;
+}
+
+.foto img {
+    width: 95%;
+}
+
+.botton {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+.friends {
+    width: 100%;
+    background-color: white;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.friends img {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.mainRight {
+    border: 2px solid lightgrey;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+.info1 {
+    width: 100%;
+}
+
+.info2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myinfo1 {
+    width: 45%;
+}
+
+.myinfo2 {
+    width: 45%;
+}
+
+.info3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info3-1 {
+    width: 15%;
+}
+
+.myFotoMain {
+    width: 100%;
+}
+
+.myfototext {
+    width: 100%;
+}
+
+.myfoto {
+    width: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.myfoto img {
+    width: 23%;
+}
+
+.lentaMain {
+    width: 100%;
+    margin: 1px;
+}
+
+.lentafoto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.lentafoto img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}

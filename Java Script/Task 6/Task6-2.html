@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        const x = prompt("Введите количество цифр")
+        const array = [];
+        for (let i = 0; i < x; i++) {
+            const element = prompt("Введите элемент " + (i + 1));
+            array.push(element);
+        }
+        const max = Math.max(...array)
+        console.log("Максимальное число из введеных " + max)
+        alert("Максимальное число из введеных " + max)
+    </script>
+</body>
+
+</html>

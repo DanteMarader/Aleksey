@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <script>
+        let users = [
+            { login: "aleksey", password: "qwerty" },
+            { login: "aibar", password: "qqqqq" },
+            { login: "dilshat", password: "qweqwe" },
+            { login: "alibek", password: "asdasd" },
+            { login: "rayan", password: "aaaaaa" }
+        ]
+        let userlog = prompt("Введите логин")
+        let userpas = prompt("Введите пароль")
+        text = false
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].login === userlog && users[i].password === userpas) {
+                text = true
+                break
+            }
+        }
+        if (text) {
+            alert("Welcome, you are authenticated")
+        } else {
+            alert("User not found")
+        }
+    </script>
+</body>
+
+</html>

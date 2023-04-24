@@ -1,0 +1,48 @@
+<html>
+
+<body>
+    <script>
+        let books = [
+            { name: "Тонкое искусство пофигизма", author: "Марк Мэнсон", price: 200 },
+            { name: "Играть чтобы жить", author: "Дмитрий Русс", price: 500 },
+            { name: "Java для чайников", author: "Барри Берд", price: 350 },
+            { name: "Джедайские техники", author: "Максим Дорофеев", price: 400 },
+            { name: "Думай и богатей", author: "Наполеон Хилл", price: 250 },
+            { name: "Всё хреново. Книга о надежде", author: "Марк Мэнсон", price: 150 },
+            { name: "Чувство долга", author: "Дмитрий Русс", price: 200 },
+            { name: "Программирование на Java для чайников", author: "Барри Берд", price: 300 },
+            { name: "Закон успеха", author: "Наполеон Хилл", price: 100 }
+
+
+        ]
+        
+        function booksScan(books, scan) {
+            const books2 = [];
+            for (let i = 0; i < books.length; i++) {
+                if (books[i].author.toLowerCase().includes(scan.toLowerCase())) {
+                    books2.push(books[i]);
+                }
+            }
+            return books2;
+        }
+        
+        let scan = prompt("Введите имя автора");
+        if (scan === null || scan.trim() === "") {
+            alert("Вы не ввели имя автора");
+        } else {
+            let bookslist = booksScan(books, scan);
+            if (bookslist.length > 0) {
+                bookslist.sort((a, b) => a.price - b.price);
+                let bookNames = "";
+                for (let i = 0; i < bookslist.length; i++) {
+                    bookNames += bookslist[i].name + "\nЦена: " + bookslist[i].price + "$\n";
+                }
+                alert("Книги автора: " + scan + "\n" + bookNames);
+            } else {
+                alert(`Книг автора ${scan} не найдено.`);
+            }
+        }
+    </script>
+</body>
+
+</html>

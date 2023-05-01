@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Введите число n:"))
+        let arr = []
+        for (let i = 0; i < n; i++) {
+            arr.push(parseInt(prompt("Введите число:")))
+        }
+
+        let m = parseInt(prompt("Введите число m:"))
+        let index = arr.indexOf(m)
+
+        if (index > -1) {
+            alert("Yes\nИндекс числа " + m + " в массиве: " + index)
+            console.log("Yes\nИндекс числа " + m + " в массиве: " + index)
+        } else {
+            alert("No")
+            console.log("No")
+        }
+    </script>
+</body>
+
+</html>

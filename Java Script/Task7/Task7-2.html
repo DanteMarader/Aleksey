@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        let numbers = [];
+        let input = 1;
+
+        while (input !== 0) {
+            input = parseInt(prompt("Введите число (0 для завершения ввода):"));
+            if (input !== 0) {
+                numbers.push(input);
+            }
+        }
+
+        let average = 1;
+        for (let i = 0; i < numbers.length; i++) {
+            average *= numbers[i];
+        }
+        average = Math.pow(average, 1 / numbers.length);
+
+        alert("Геометрическая средняя: " +  average.toFixed(3))
+        console.log("Геометрическая средняя: " + average.toFixed(3));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<html>
+
+<body>
+    <script>
+        var cars = [
+            { "name": "Toyota", "year": 2015, "volume": 2.2, "price": 12000000 },
+            { "name": "Mercedes", "year": 2018, "volume": 3.8, "price": 70000000 },
+            { "name": "Toyota", "year": 2013, "volume": 2.0, "price": 7000000 },
+            { "name": "BMW", "year": 2011, "volume": 3.0, "price": 11000000 },
+            { "name": "Lexus", "year": 2017, "volume": 5.7, "price": 60000000 },
+        ]
+        while (true) {
+            let scan = prompt("INSERT [1] TO SEARCH BY NAME\nINSERT [2] TO SEARCH BY YEAR\nINSERT [3] TO SEARCH BY ENGINE VOLUME\nINSERT [4] TO SEARCH BY PRICE\nINSERT [5] TO EXIT");
+
+            if(scan == 1) 
+            scanCars(1)
+            if(scan == 2) 
+            scanCars(2)
+            if(scan == 3) 
+            scanCars(3)
+            if(scan == 4) 
+            scanCars(4)
+            if (scan == 5) {
+                break;
+            }
+        }
+
+            function scanCars(type) {
+
+                let scan1, scan2
+                if (type === 1) {
+                    scan1 = prompt("Введите имя автомобиля:")
+                    scan2 = ""
+                } else if (type === 2) {
+                    scan1 = prompt("Введите год выпуска (начальный):")
+                    scan2 = prompt("Введите год выпуска (конечный):")
+                } else if (type === 3) {
+                    scan1 = prompt("Введите объем двигателя (начальный):")
+                    scan2 = prompt("Введите объем двигателя (конечный):")
+                } else if (type === 4) {
+                    scan1 = prompt("Введите цену (начальную):")
+                    scan2 = prompt("Введите цену (конечную):")
+                }
+                 else {
+                    return;
+                }
+
+                let results = ""
+
+                for (let i = 0; i < cars.length; i++) {
+                    let car = cars[i]
+
+                    if (type === 1 && car.name === scan1) {
+                        results += car.name + " - " + car.year + " - " + car.volume + " liters - " + car.price + " KZT\n"
+                    }
+                    else if (type === 2 && car.year >= scan1 && car.year <= scan2) {
+                        results += car.name + " - " + car.year + " - " + car.volume + " liters - " + car.price + " KZT\n"
+                    }
+                    else if (type === 3 && car.volume >= scan1 && car.volume <= scan2) {
+                        results += car.name + " - " + car.year + " - " + car.volume + " liters - " + car.price + " KZT\n"
+                    }
+                    else if (type === 4 && car.price >= scan1 && car.price <= scan2) {
+                        results += car.name + " - " + car.year + " - " + car.volume + " liters - " + car.price + " KZT\n"
+                    }
+                }
+                if (results === "") {
+                    alert("Автомобилей не найдено!");
+                } else {
+                    alert("Найдены следующие автомобили:\n" + results)
+                }
+            }
+    </script>
+</body>
+
+</html>

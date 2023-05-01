@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        let input;
+        const numbers = [];
+
+        do {
+            input = prompt("Введите число: ");
+            if (input !== "0") {
+                numbers.push(Number(input));
+            }
+        } while (input !== "0");
+
+        const Num = numbers.filter(num => num > 0);
+        alert("Положительные числа массива: " + Num)
+        console.log("Положительные числа массива: " + Num);
+    </script>
+</body>
+
+</html>

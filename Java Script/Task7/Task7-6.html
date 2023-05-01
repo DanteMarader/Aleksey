@@ -1,0 +1,49 @@
+<html>
+<body>
+    <script>
+        let students = []
+
+    function addStudent() {
+        let name = prompt("Введите имя:")
+        let surname = prompt("Введите фамилию:")
+        let gpa = prompt("Введите GPA:")
+
+        let student = {
+            name: name,
+            surname: surname,
+            gpa: gpa
+        }
+
+        students.push(student)
+
+        alert("Студент " + name + " " + surname + " добавлен в список.")
+    }
+
+    function listStudents() {
+        if (students.length === 0) {
+            alert("Список студентов пуст.")
+        } else {
+            let studentList = "Список студентов:\n"
+            for (let i = 0; i < students.length; i++) {
+                studentList += (i + 1) + ". " + students[i].name + " " + students[i].surname + ", GPA: " + students[i].gpa + "\n"
+            }
+            alert(studentList)
+        }
+    }
+
+    function exit() {
+        window.close();
+    }
+
+    while (true) {
+        let scan = prompt("PRESS 1 TO ADD STUDENT\nINSERT NAME:\nINSERT SURNAME:\nINSERT GPA:\nPRESS 2 TO LIST STUDENT\nPRESS 0 TO EXIT")
+        if (scan == 1)
+            addStudent()
+        if (scan == 2)
+            listStudents()
+        if (scan == 0)
+            break;
+    }
+</script>
+</body>
+</html

@@ -15,31 +15,31 @@
 
 
         ]
-        
+        let scan = prompt("Введите имя автора")
+
         function booksScan(books, scan) {
-            const books2 = [];
+            const books2 = []
             for (let i = 0; i < books.length; i++) {
                 if (books[i].author.toLowerCase().includes(scan.toLowerCase())) {
-                    books2.push(books[i]);
+                    books2.push(books[i])
                 }
             }
             return books2;
         }
         
-        let scan = prompt("Введите имя автора");
         if (scan === null || scan.trim() === "") {
-            alert("Вы не ввели имя автора");
+            alert("Вы не ввели название модели")
         } else {
-            let bookslist = booksScan(books, scan);
+            let bookslist = booksScan(books, scan)
             if (bookslist.length > 0) {
-                bookslist.sort((a, b) => a.price - b.price);
-                let bookNames = "";
+                bookslist.sort((a, b) => a.price - b.price)
+                let bookNames = ""
                 for (let i = 0; i < bookslist.length; i++) {
-                    bookNames += bookslist[i].name + "\nЦена: " + bookslist[i].price + "$\n";
+                    bookNames += bookslist[i].name + "\nЦена: " + bookslist[i].price + "$\n"
                 }
-                alert("Книги автора: " + scan + "\n" + bookNames);
+                alert("Книги автора: " + scan + "\n" + bookNames)
             } else {
-                alert(`Книг автора ${scan} не найдено.`);
+                alert(`Книг автора ${scan} не найдено.`)
             }
         }
     </script>

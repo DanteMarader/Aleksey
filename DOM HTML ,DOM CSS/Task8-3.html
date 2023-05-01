@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 50px auto;
+            width: 50%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: rgb(60, 155, 60);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-right: 450px;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+        }
+
+        button:hover {
+            background-color: rgb(30, 108, 105);
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<script type="text/javascript" src="task8-3.js"></script>
+
+<body>
+    <form>
+        <div>
+            <h1>CARD:</h1>
+            <input type="text" id="input1">
+            <input type="text" id="input2">
+            <input type="text" id="input3">
+            <input type="text" id="input4">
+        </div>
+        <div>
+            <h1>NAME SURNAME:</h1>
+            <input type="text" style="width: 50%;" id="nameSurname">
+        </div>
+        <div>
+            <h1>CVV:</h1>
+            <input type="password" id="inputPass">
+        </div>
+        <button onclick="toCheck()">COMPLETE</button>
+    </form>
+</body>
+
+</html>

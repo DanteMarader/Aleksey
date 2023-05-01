@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        let n = parseInt(prompt('Введите количество чисел:'));
+        let Nums = [];
+
+        for (let i = 0; i < n; i++) {
+            let num = parseInt(prompt("Введите число № " + (i + 1)));
+            Nums.push(num);
+        }
+
+        let multi = 1;
+        for (let num1 of Nums) {
+            if (num1 !== 0) {
+                multi *= num1;
+            }
+        }
+        alert("Произведение чисел, не равных нулю: " + multi)
+        console.log("Произведение чисел, не равных нулю: " + multi);
+
+    </script>
+</body>
+
+</html>

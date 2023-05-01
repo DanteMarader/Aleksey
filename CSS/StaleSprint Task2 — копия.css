@@ -1,0 +1,191 @@
+/* Стили для всего документа */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Стили для главного контейнера */
+  .Main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Стили для верхней части страницы */
+  .Head {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #4e75a3;
+    color: white;
+    padding: 0 10px;
+  }
+  
+  .textHead {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .inputHead {
+    margin-left: auto;
+  }
+  
+  .input {
+    height: 30px;
+    width: 200px;
+    background-color: #e7e8ec;
+    border: none;
+    padding: 5px;
+  }
+  
+  /* Стили для основной части страницы */
+  .MainCore {
+    display: flex;
+    flex: 1;
+    background-color: #e7e8ec;
+  }
+  
+  .mainleft {
+    width: 200px;
+    background-color: #3d5a85;
+    color: white;
+    padding: 10px;
+  }
+  
+  .mainleft p {
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .mainmid {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .botton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #3d5a85;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .friends {
+    margin-top: 20px;
+  }
+  
+  .friends p {
+    margin-bottom: 5px;
+  }
+  
+  .friends img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .mainRight {
+    width: 250px;
+    padding: 10px;
+  }
+  
+  .Info1 {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .info2 {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .myinfo1 p {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .myinfo2 p {
+    margin: 0;
+  }
+  
+  .myinfo2 a {
+    text-decoration: none;
+    color: #4e75a3;
+  }
+  
+  .info3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .info3-1 {
+    text-align: center;
+  }
+  
+  .info3-1 p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .info3-1 p:last-child {
+    font-size: 14px;
+  }
+  
+  .myFotoMain {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .myfototext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .myfototext p:first-child {
+    font-weight: bold;
+  }
+  
+  .myfoto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.myfoto img {
+    width: 23%;
+}
+
+.lentaMain {
+    width: 100%;
+    margin: 1px;
+}
+
+.lentafoto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.lentafoto img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}

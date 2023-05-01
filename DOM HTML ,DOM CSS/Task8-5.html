@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(234, 233, 233);
+        }
+
+        .Forma {
+            width: 80%;
+            margin: 10 auto;
+            box-shadow: 0px 0px 10px 2px rgb(193 17 57)
+        }
+
+        .Fullfoto {
+            padding-top: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Fullfoto img {
+            width: 1170px;
+            height: 620px;
+            box-shadow: 5px 5px 10px rgb(180, 180, 180);
+        }
+
+        .Allfoto {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        button {
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 5px 5px 10px rgb(68, 27, 144);
+        }
+
+        button img {
+            width: 150px;
+            height: 80px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            box-shadow: 5px 5px 10px rgb(112, 167, 30);
+        }
+    </style>
+</head>
+<script type="text/javascript" src="task8-5.js"></script>
+
+<body>
+    <div class="Forma">
+        <div class="Fullfoto">
+            <img id="mainfoto" src="Task8-5/2.jpg">
+        </div>
+        <div class="Allfoto">
+            <button><img onclick="toClick(0)" id="foto1" src="Task8-5/2.jpg"></button>
+            <button><img onclick="toClick(1)" id="foto2" src="Task8-5/3.jpg"></button>
+            <button><img onclick="toClick(2)" id="foto3" src="Task8-5/4.jpg"></button>
+            <button><img onclick="toClick(3)" id="foto4" src="Task8-5/5.jpg"></button>
+            <button><img onclick="toClick(4)" id="foto5" src="Task8-5/6.jpg"></button>
+            <button><img onclick="toClick(5)" id="foto6" src="Task8-5/7.jpg"></button>
+        </div>
+    </div>
+</body>
+
+</html>
